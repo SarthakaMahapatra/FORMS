@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            STUDENT REGISTRATION FORM
+        </title>
+        <link rel="stylesheet" href="stud_reg.css">
+    </head>
+    <body>
+        <nav class="nav nav-pills nav-fill">
+            <a class="nav-link" href=""target="_blank" style="color: red">STUDENT FORM</a>
+            <a class="nav-link" href="teach_reg.html" style="color:red">TEACHER FORM</a>
+            <a class="nav-link" href="class_info.html" style="color:red">CLASS INFO</a>
+            <a class="nav-link" href="sub_info.html" style="color:red;">SUBJECT INFO</a>
+          </nav><br>
+        <script src="stud_reg.js"></script>
+        <div class="grid-container">
+            <div class="part1">
+        <form name="myform" onsubmit="return(validate());">
+        <table align="center">
+            <tr>
+                <td colspan="2"><h2><ul>STUDENT REGISTRATION FORM</ul></h2></td>
+            </tr>
+
+
+            <tr>
+                <td><label for="roll">ROLL NO:</label></td>
+                <td><input type="number" id="roll" name="roll" placeholder="Enter Your Roll NO."></td>
+            </tr>
+
+
+            <tr>
+                <td><label for="name">NAME:</label></td>
+                <td><input type="text" id="name" name="name" placeholder="Enter Your Name"></td>
+            </tr>
+
+
+            <tr>
+                <td><label for="add">ADDRESS:</label></td>
+                <td><input type="text" id="add" name="add" placeholder="Enter Your Address"></td>
+            </tr>
+
+
+            <tr>
+                <td><label for="con">CONTACT NO.</label></td>
+                <td><input type="number" id="con" name="con" placeholder="Enter Your Contact No."></td>
+            </tr>
+
+
+            <tr>
+                <td><label for="class">CLASS:</label></td>
+                <td><select id="cls">
+                    <option>Choose option</option>
+                    <option>6th</option>
+                    <option>7th</option>
+                    <option>8th</option>
+                    <option>9th</option>
+                    <option>10th</option>
+                    <option>11th</option>
+                    <option>12th</option>
+                </select></td>
+            </tr>
+
+
+            <tr>
+                <td><label for="mail">EMAIL ID:</label></td>
+                <td><input type="email" id="mail" name="mail" placeholder="Enter Your Mail ID"></td>
+            </tr>
+
+
+            <tr>
+            <td><label for="gender">GENDER:</label>
+            <label id="male1"><input type="radio" id="male" name="gender">MALE</label>
+            <label id="female1"><input type="radio" id="female" name="gender">FEMALE</label></td>
+            </tr>
+        </table>
+        <br><br>
+        <center>
+            <input type="submit" value="Submit" id="sub">
+            <input type="reset" value="Reset" id="res">
+        </center>
+        </form>
+        </div>
+        </div>
+    </body>
+</html>

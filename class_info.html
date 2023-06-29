@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            CLASS INFORMATION
+        </title>
+        <link rel="stylesheet" href="class_info.css">
+    </head>
+    <body>
+        <nav class="nav nav-pills nav-fill">
+            <a class="nav-link" href="stud_reg.html" style="color: blue">STUDENT FORM</a>
+            <a class="nav-link" href="teach_reg.html" style="color:blue">TEACHER FORM</a>
+            <a class="nav-link" href="" style="color:blue">CLASS INFO</a>
+            <a class="nav-link" href="sub_info.html" style="color:blue;">SUBJECT INFO</a>
+          </nav><br>
+        <script src="class_info.js"></script>
+        <div class="grid-container">
+            <div class="part3">
+        <form name="myform3" onsubmit="return(validate());">
+        <table align="center">
+            <tr>
+                <td colspan="2"><h2>CLASS INFORMATION</h2></td>
+            </tr>
+
+
+            <tr>
+                <td><label for="name">CLASS NAME:</label></td>
+                <td><input type="text" id="name" name="name" placeholder="Enter Class Name"></td>
+            </tr>
+
+
+            <tr>
+                <td><label for="str">CLASS STRENGTH:</label></td>
+                <td><input type="number" id="str" name="str" placeholder="Enter Class Strength"></td>
+            </tr>
+
+
+            <tr>
+                <td><label for="sec">SECTION:</label></td>
+                <td><select id="sec">
+                    <option>Choose Option</option>
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                    <option>D</option>
+                    <option>E</option>
+                </select></td>
+            </tr>
+
+
+            <tr>
+                <td><label for="teach">CLASS TEACHER:</label></td>
+                <td><select id="tea">
+                    <option>Choose Option</option>
+                    <option>Suren Sir</option>
+                </select></td>
+            </tr>
+        </table>
+        <br><br>
+        <center>
+            <input type="submit" value="Submit" id="sub">
+            <input type="reset" value="Reset" id="res">
+        </center>
+        </form>
+        </div>
+        </div>
+    </body>
+</html>

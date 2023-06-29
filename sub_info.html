@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            SUBJECT INFORMATION
+        </title>
+        <link rel="stylesheet" href="sub_info.css">
+    </head>
+    <body>
+        <nav class="nav nav-pills nav-fill">
+            <a class="nav-link" href="stud_reg.html" style="color: rgb(255, 0, 0)">STUDENT FORM</a>
+            <a class="nav-link" href="teach_reg.html" style="color:rgb(255, 0, 0)">TEACHER FORM</a>
+            <a class="nav-link" href="class_info.html" style="color:rgb(255, 0, 0)">CLASS INFO</a>
+            <a class="nav-link" href="" style="color:rgb(255, 0, 0);">SUBJECT INFO</a>
+          </nav><br>
+        <script src="sub_info.js"></script>
+        <div class="grid-container">
+            <div class="part4">
+        <form name="myform4" onsubmit="return(validate());">
+        <table align="center">
+            <tr>
+                <td colspan="2"><h2>SUBJECT INFORMATION</h2></td>
+            </tr>
+
+
+            <tr>
+                <td><label for="sub">SUBJECT NAME:</label></td>
+                <td><select id="subj">
+                    <option></option>
+                    <option>Science</option>
+                    <option>Mathematics</option>
+                    <option>English</option>
+                    <option>Computer Science</option>
+                    <option>History</option>
+                    <option>Geography</option>
+                    <option>Odia/Hindi</option>
+                </select></td>
+            </tr>
+
+
+            <tr>
+                <td><label for="cls">CLASS NAME:</label></td>
+                <td><select id="cls">
+                    <option></option>
+                    <option>6(A-E)</option>
+                    <option>7(A-E)</option>
+                    <option>8(A-E)</option>
+                    <option>9(A-E)</option>
+                    <option>10(A-E)</option>
+                    <option>11(A-E)</option>
+                    <option>12(A-E)</option>
+                </select></td>
+            </tr>
+
+
+            <tr>
+                <td><label for="cat">CATEGORY:</label></td>
+                <td><select id="cat">
+                    <option></option>
+                    <option>Optional</option>
+                    <option>General</option>
+                </select></td>
+            </tr>
+
+
+            <tr>
+                <td><label for="cre" >CREDIT:</label></td>
+                <td><input type="number" id="cre" name="cre"></td>
+            </tr>
+        </table>
+        <br><br>
+        <center>
+            <input type="submit" value="Submit" id="sub">
+            <input type="reset" value="Reset" id="res">
+        </center>
+        </form>
+        </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            TEACHER REGISTRATION FORM
+        </title>
+        <link rel="stylesheet" href="teach_reg.css">
+    </head>
+    <body>
+        <nav class="nav nav-pills nav-fill">
+            <a class="nav-link" href="stud_reg.html" style="color: yellow">STUDENT FORM</a>
+            <a class="nav-link" href="" style="color:yellow">TEACHER FORM</a>
+            <a class="nav-link" href="class_info.html" style="color:yellow">CLASS INFO</a>
+            <a class="nav-link" href="sub_info.html" style="color:yellow;">SUBJECT INFO</a>
+          </nav><br>
+        <script src="teach_reg.js"></script>
+        <div class="grid-container">
+            <div class="part2">
+        <form name="myform2" onsubmit="return(validate());">
+        <table align="center">
+            <tr>
+                <td colspan="2"><h2>TEACHER REGISTRATION FORM</h2></td>
+            </tr>
+
+
+            <tr>
+                <td><label for="name">TEACHER NAME:</label></td>
+                <td><input type="text" id="name" name="name" placeholder="Enter Teacher Name"></td>
+            </tr>
+
+
+            <tr>
+                <td><label for="num">CONTACT NUMBER:</label></td>
+                <td><input type="number" id="num" name="num" placeholder="Enter Your Number"></td>
+            </tr>
+
+
+            <tr>
+                <td><label for="mail">EMAIL ID:</label></td>
+                <td><input type="email" id="mail" for="mail" placeholder="Enter Your Mail ID"></td>
+            </tr>
+
+
+            <tr>
+                <td><label for="desg">DESIGNATION:</label></td>
+                <td><select id="des">
+                    <option>Choose Option</option>
+                    <option>TGT</option>
+                    <option>PGT</option>
+                </select></td>
+            </tr>
+
+
+            <tr>
+                <td><label for="cat">CATEGORY:</label></td>
+                <td><select id="cat">
+                    <option>Choose Option</option>
+                    <option>Full Time</option>
+                    <option>Part Time</option>
+                    <option>Contract</option>
+                </select></td>
+            </tr>
+
+
+            <tr>
+                <td><label for="sub">SUBJECT SPECIALIZATION:</label></td>
+                <td><input type="text" id="subj" name="sub" placeholder="Enter Your Subject Specialization"></td>
+            </tr>
+
+
+            <tr>
+                <td><label for="qual">QUALIFICATION:</label></td>
+                <td><select id="qua">
+                    <option>Choose Option</option>
+                    <option>UG</option>
+                    <option>PG</option>
+                    <option>PHD.</option>
+                </select></td>
+            </tr>
+        </table>
+        <br><br>
+        <center>
+            <input type="submit" value="Submit" id="sub">
+            <input type="reset" value="Reset" id="res">
+        </center>
+        </form>
+        </div>
+        </div>
+    </body>
+</html>
